@@ -1,0 +1,41 @@
+//format of input file
+// line (1): '***' indicates new grammar section
+// line (2): Input string
+// line(3): Variable set
+// line(4): Terminal set
+// line(5): Starting Symbol S
+// line (6): Production rules
+//'end' statement shows EOF
+***
+aabbb
+S, A, B
+a,b
+S 
+S -> aAB 
+A-> a A B | b 
+B-> b
+***
+{ixtx=y+zeixtx=y+zdd}
+S,R,L,C,A,Y,P,Z,X,T,D
+{,},x,=,y,+,z,i,t,e,d
+S
+S -> {LR
+R -> }
+L -> xAYPZ | iXTLC
+C -> d | eLD
+A -> =
+Y -> y
+P -> +
+Z -> z
+X -> x
+T -> t
+D -> d
+***
+abb
+S,A,B
+a,b
+S
+S->aA
+A->bB
+B->b
+end
